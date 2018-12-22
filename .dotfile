@@ -1,0 +1,2 @@
+alias dot="code ~/dotfiles/.dotfile"
+alias gg="lazygit"
