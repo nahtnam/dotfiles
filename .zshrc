@@ -26,3 +26,7 @@ alias gg="lazygit"
 alias ghpc="git push -u origin HEAD && gh pr create --fill"
 alias ghpm="gh pr merge --squash --delete-branch --auto"
 alias ghpcm="ghpc && ghpm"
+
+alias pn="pnpm"
+
+test -f $HOME/.zshrc.local && source $HOME/.zshrc.local
