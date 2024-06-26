@@ -29,4 +29,19 @@ alias ghpcm="ghpc && ghpm"
 
 alias pn="pnpm"
 
+nodePackageManager() {
+  if [[ -f bun.lockb ]]; then
+    command bun "$@"
+  elif [[ -f pnpm-lock.yaml ]]; then
+    command pnpm "$@"
+  elif [[ -f yarn.lock ]]; then
+    command yarn "$@"
+  elif [[ -f package-lock.json ]]; then
+    command npm "$@"
+  else
+    command pnpm "$@"
+  fi
+}
+alias npm=nodePackageManager
+
 test -f $HOME/.zshrc.local && source $HOME/.zshrc.local
