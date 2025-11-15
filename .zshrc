@@ -4,6 +4,8 @@ zstyle ':omz:update' mode auto
 
 source $HOME/.antidote/antidote.zsh
 antidote load $HOME/dotfiles/.zsh_plugins.txt
+eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(mise activate zsh)"
 
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='nano'

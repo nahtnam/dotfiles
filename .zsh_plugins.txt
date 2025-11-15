@@ -9,6 +9,5 @@ ohmyzsh/ohmyzsh path:plugins/npm
 
 zsh-users/zsh-syntax-highlighting
 zsh-users/zsh-autosuggestions
-lukechilds/zsh-nvm
 grigorii-zander/zsh-npm-scripts-autocomplete
 ntnyq/omz-plugin-pnpm
